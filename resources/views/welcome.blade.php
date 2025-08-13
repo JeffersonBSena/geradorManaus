@@ -48,7 +48,22 @@
             </nav>
             </header>
 
-            <main style="display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; align-items:start; padding:2rem; flex: 1;">
+            <main style="
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 1.5rem;
+            align-items: stretch;
+            padding: 2rem;
+            flex: 1;
+            }
+
+            @media (min-width: 768px) {
+            main {
+                flex-direction: row;
+                align-items: start;
+            }
+            }
+            ">
 
             <!-- Coluna Esquerda: Texto -->
             <section style="padding:2rem;
