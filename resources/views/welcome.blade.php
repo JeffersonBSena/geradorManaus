@@ -58,15 +58,22 @@
                             line-height:1.6;">
                 <h2 style="margin:0 0 1rem 0; font-size:1.8rem; font-weight:800;">Sobre Nós</h2>
                 <p>
-                    A TE Geradores Manaus atua desde 2018 no fornecimento e manutenção de geradores de energia,
-                    garantindo confiabilidade e performance em qualquer situação. Nossa missão é fornecer soluções
-                    eficientes e seguras para nossos clientes, atendendo tanto demandas emergenciais quanto
-                    projetos planejados.
+                    A TE Geradores Manaus atua desde 2018 no fornecimento, venda e manutenção de geradores de energia, com potências que variam de 15 kVA a 500 kVA, garantindo confiabilidade e performance em qualquer situação. Nossa missão é fornecer soluções eficientes e seguras para nossos clientes, atendendo tanto demandas emergenciais quanto projetos planejados.
                 </p>
                 <p>
-                    Com uma equipe técnica altamente qualificada e equipamentos de última geração, buscamos sempre
-                    superar as expectativas, oferecendo suporte rápido, eficaz e personalizado.
+                    Com uma equipe técnica altamente qualificada e equipamentos de última geração, buscamos sempre superar as expectativas, oferecendo suporte rápido, eficaz e personalizado.
                 </p>
+                <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus:%20Bom%20dia.%20Gostaria%20de%20um%20suporte" style="display:inline-block; 
+                          background-color:#25D366; 
+                          color:#fff; 
+                          padding:0.8rem 1.5rem; 
+                          border-radius:8px; 
+                          font-size:1rem; 
+                          font-weight:bold; 
+                          text-decoration:none; 
+                          margin-top:1rem;">
+                    O Mais barato de Manaus! Confira aqui
+                </a>
             </section>
 
             <!-- Coluna Direita: Bloco de Imagens -->
