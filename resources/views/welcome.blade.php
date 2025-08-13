@@ -127,7 +127,18 @@
                         style="width:100%; height:100%; object-fit:cover; object-position:center;">
                 </figure>
             </aside>
-
+            <div style="
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                z-index: 999;
+            ">
+                <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus:%20Bom%20dia.%20Gostaria%20de%20um%20suporte" target="_blank" rel="noopener noreferrer">
+                    <img src="{{ asset('images/whatsapp.png') }}" alt="whatsapp-tesla" style="width: 100%; height: 100%;" />
+                </a>
+            </div>
         </main>
 
 
