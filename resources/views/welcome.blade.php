@@ -39,7 +39,7 @@
             <a href="{{ url('/') }}">
                 <picture>
                 <source srcset="{{ asset('images/LOGO-DARK.svg') }}" media="(prefers-color-scheme: dark)">
-                <img src="{{ asset('images/LOGO.svg') }}" alt="Logo" style="height:40px; width:auto;">
+                <img src="{{ asset('images/LOGO-DARK.svg') }}" alt="Logo" style="height:40px; width:auto;">
                 </picture>
             </a>
             <nav>
