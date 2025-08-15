@@ -20,7 +20,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-black-100 text-black-800">
+<body class="bg-black-100 text-black-800 ">
     <!-- Primeira barra: Contato e redes sociais (visível em desktop) -->
     <div class="hidden md:flex bg-black text-white px-8 py-2 justify-between items-center text-sm">
         <div class="flex gap-4 items-center">
@@ -189,7 +189,7 @@
     </section>
 
     <!-- Contato (call-to-action) -->
-    <section style="background-color: #e60084; color: white;">
+    <section style="background-color: #e60084; color: white; padding: 16px;">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-2xl font-bold mb-4">Pronto para potencializar seu projeto?</h2>
             <p class="mb-6">Entre em contato e descubra a solução ideal para sua operação.</p>
@@ -212,6 +212,9 @@
             <img src="{{ asset('images/whatsapp.png') }}" alt="whatsapp-tesla" style="width: 100%; height: 100%;" />
         </a>
     </div>
+    <footer style="padding:1rem; background-color: #000000; color:#ffffff; text-align:center;">
+        © 2025 Grupo Tesla Eventos. Todos os direitos reservados.
+    </footer>
 
 </body>
 
