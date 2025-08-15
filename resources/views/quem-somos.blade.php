@@ -132,7 +132,7 @@
     <!-- Seção de texto com imagem -->
     <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
-            <div> <img src="{{ asset('images/foto4.jpeg') }}" alt="Equipe Técnica" class="rounded shadow"> </div>
+            <div> <img src="{{ asset('images/foto4.jpeg') }}" alt="Equipe Técnica" class="rounded shadow max-w-md w-full mx-auto"> </div>
             <div>
                 <h2 class="text-2xl font-semibold mb-4 text-[#e60084]">Energia confiável para seus projetos</h2>
                 <p class="mb-4 text-gray-700"> A Geradores Manaus nasceu com o propósito de oferecer soluções
