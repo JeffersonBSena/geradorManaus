@@ -27,8 +27,9 @@
             <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus,%20Bom%20dia.%20Gostaria%20de%20iniciar%20um%20atendimento" class="hover:underline" aria-label="WhatsApp">
                 📞(92) 99391-4237
             </a>
-            <a href="https://maps.app.goo.gl/vPeG345SqwQ9pcfW7" class="hover:underline" aria-label="Localização">
-                📍 R. 188, 23 - Nova Cidade, Manaus - AM
+            <a href="https://maps.app.goo.gl/9GRMWWw2C3GaxuLy6" class="hover:underline" aria-label="Localização">
+                📍 Rua Rio Eiru, 95, sala 20/2º Pav, CD SPACE CENTER - N.
+                Senhora das Graças, Manaus
             </a>
         </div>
         <div class="flex gap-4 items-center">
@@ -178,13 +179,27 @@
 </div>
     </section>
 
-    <!-- Sobre Nós -->
+    <!-- Sobre Nós com duas colunas -->
     <section class="bg-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-6">Quem Somos</h2>
-            <p class="max-w-3xl mx-auto text-center">Referência em soluções energéticas e logísticas em Manaus. Boutique
-                de locação com foco em qualidade, respeito ao cliente e inovação constante.
-            A TE Geradores Manaus atua desde 2018 no fornecimento, venda e manutenção de geradores de energia, com potências que variam de 15 kVA a 500 kVA, garantindo confiabilidade e performance em qualquer situação. Nossa missão é fornecer soluções eficientes e seguras para nossos clientes, atendendo tanto demandas emergenciais quanto projetos planejados.</p>
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+            
+            <!-- Coluna da Esquerda: Imagem -->
+            <div>
+                <img src="{{ asset('images/foto1.jpeg') }}" alt="Sobre a TE Geradores Manaus" class="rounded shadow max-w-md w-full mx-auto">
+            </div>
+
+            <!-- Coluna da Direita: Texto -->
+            <div>
+                <h2 class="text-3xl font-bold mb-4 text-[#e60084]">Quem Somos</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Referência em soluções energéticas e logísticas em Manaus. Boutique de locação com foco em qualidade, respeito ao cliente e inovação constante.
+                    <br><br>
+                    A <strong>TE Geradores Manaus</strong> atua desde 2018 no fornecimento, venda e manutenção de geradores de energia com potências de 15 kVA a 500 kVA, garantindo confiabilidade e performance em qualquer situação.
+                    <br><br>
+                    Nossa missão é fornecer soluções eficientes e seguras para nossos clientes, atendendo tanto demandas emergenciais quanto projetos planejados.
+                </p>
+            </div>
+
         </div>
     </section>
 

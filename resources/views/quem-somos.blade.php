@@ -28,8 +28,9 @@
                     class="hover:underline" aria-label="WhatsApp">
                     📞(92) 99391-4237
                 </a>
-                <a href="https://maps.app.goo.gl/vPeG345SqwQ9pcfW7" class="hover:underline" aria-label="Localização">
-                    📍 R. 188, 23 - Nova Cidade, Manaus - AM
+                <a href="https://maps.app.goo.gl/9GRMWWw2C3GaxuLy6" class="hover:underline" aria-label="Localização">
+                    📍 Rua Rio Eiru, 95, sala 20/2º Pav, CD SPACE CENTER - N.
+                    Senhora das Graças, Manaus
                 </a>
             </div>
             <div class="flex gap-4 items-center">
