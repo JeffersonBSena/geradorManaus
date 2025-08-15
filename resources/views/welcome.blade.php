@@ -73,7 +73,6 @@
         <div class="menu-desktop" style="display: flex; gap: 2rem;">
             <a href="/" style="text-decoration: none; color: #24242c; font-weight: bold;">Home</a>
             <a href="/quem-somos" style="text-decoration: none; color: #24242c; font-weight: bold;">Quem Somos</a>
-            <a href="/servicos" style="text-decoration: none; color: #24242c; font-weight: bold;">Serviços</a>
             <a href="/contato" style="text-decoration: none; color: #24242c; font-weight: bold;">Contato</a>
         </div>
 
@@ -89,7 +88,6 @@
     <div id="menu-mobile" style="display: none; flex-direction: column; gap: 1rem; padding: 1rem 2rem; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <a href="/" style="text-decoration: none; color: #24242c; font-weight: bold;">Home</a>
         <a href="/quem-somos" style="text-decoration: none; color: #24242c; font-weight: bold;">Quem Somos</a>
-        <a href="/servicos" style="text-decoration: none; color: #24242c; font-weight: bold;">Serviços</a>
         <a href="/contato" style="text-decoration: none; color: #24242c; font-weight: bold;">Contato</a>
     </div>
 
