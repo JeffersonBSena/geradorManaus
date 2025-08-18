@@ -133,7 +133,7 @@
             <h1 class="text-4xl font-bold mb-4">Soluções Inteligentes em Energia com Geradores</h1>
             <p class="mb-8">Consultoria técnica especializada, venda e locação de geradores de alta performance para empresas, eventos e projetos em Manaus e região. Energia confiável com suporte completo.</p>
             <a href="https://wa.me/5592993914237?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informações." 
-                class="inline-block bg-black text-white font-bold px-6 py-3 rounded shadow hover:bg-yellow-600 transition">
+                class="bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded transition">
                 Solicite seu orçamento
             </a>
         </div>
