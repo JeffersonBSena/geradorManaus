@@ -24,7 +24,7 @@
     <!-- Primeira barra: Contato e redes sociais (visível em desktop) -->
     <div class="hidden md:flex bg-black text-white px-8 py-2 justify-between items-center text-sm">
         <div class="flex gap-4 items-center">
-            <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus,%20Bom%20dia.%20Gostaria%20de%20iniciar%20um%20atendimento" class="hover:underline" aria-label="WhatsApp">
+            <a href="https://wa.me/5592993914237?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informações." class="hover:underline" aria-label="WhatsApp">
                 📞(92) 99391-4237
             </a>
             <a href="https://maps.app.goo.gl/9GRMWWw2C3GaxuLy6" class="hover:underline" aria-label="Localização">
@@ -45,7 +45,7 @@
     <!-- Segunda barra: Ícones (visível somente em mobile) -->
     <div class="flex md:hidden bg-black text-white px-6 py-2 justify-between items-center text-sm">
         <div class="flex gap-3 items-center">
-            <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus,%20Bom%20dia.%20Gostaria%20de%20iniciar%20um%20atendimento" aria-label="WhatsApp">
+            <a href="https://wa.me/5592993914237?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informações." aria-label="WhatsApp">
                 📞
             </a>
             <a href="https://maps.app.goo.gl/vPeG345SqwQ9pcfW7" aria-label="Localização">
@@ -132,7 +132,7 @@
         <div class="container mx-auto px-4 py-20 text-center relative z-20">
             <h1 class="text-4xl font-bold mb-4">Soluções Inteligentes em Energia com Geradores</h1>
             <p class="mb-8">Consultoria técnica especializada, venda e locação de geradores de alta performance para empresas, eventos e projetos em Manaus e região. Energia confiável com suporte completo.</p>
-            <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus,%20Bom%20dia.%20Gostaria%20de%20iniciar%20um%20atendimento"
+            <a href="https://wa.me/5592993914237?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informações." 
                 class="inline-block bg-black text-white font-bold px-6 py-3 rounded shadow hover:bg-yellow-600 transition">
                 Solicite seu orçamento
             </a>
@@ -208,7 +208,7 @@
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-2xl font-bold mb-4">Pronto para potencializar seu projeto?</h2>
             <p class="mb-6">Entre em contato e descubra a solução ideal para sua operação.</p>
-            <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus:%20Bom%20dia.%20Gostaria%20de%20um%20suporte">
+            <a href="https://wa.me/5592993914237?text=Olá!%20Vim%20do%20site%20e%20gostaria%20de%20mais%20informações.">
                 <button class="bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded transition">
                     Solicitar Orçamento via WhatsApp
                 </button>
