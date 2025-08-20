@@ -18,9 +18,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WNDK9HNN');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body class="bg-black-100 text-black-800 ">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNDK9HNN"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- Primeira barra: Contato e redes sociais (visível em desktop) -->
     <div class="hidden md:flex bg-black text-white px-8 py-2 justify-between items-center text-sm">
         <div class="flex gap-4 items-center">
@@ -73,8 +85,8 @@
         <!-- Menu Desktop -->
         <div class="menu-desktop" style="display: flex; gap: 2rem;">
             <a href="/" style="text-decoration: none; color: #24242c; font-weight: bold;">Home</a>
-            <a href="/quem-somos" style="text-decoration: none; color: #24242c; font-weight: bold;">Quem Somos</a>
-            <a href="/contato" style="text-decoration: none; color: #24242c; font-weight: bold;">Contato</a>
+            <!--a href="/quem-somos" style="text-decoration: none; color: #24242c; font-weight: bold;">Quem Somos</a-->
+            <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus,%20Bom%20dia.%20Gostaria%20de%20iniciar%20um%20atendimento" style="text-decoration: none; color: #24242c; font-weight: bold;">Contato</a>
         </div>
 
         <!-- Menu Mobile -->
@@ -88,8 +100,8 @@
     <!-- Menu dropdown responsivo -->
     <div id="menu-mobile" style="display: none; flex-direction: column; gap: 1rem; padding: 1rem 2rem; background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
         <a href="/" style="text-decoration: none; color: #24242c; font-weight: bold;">Home</a>
-        <a href="/quem-somos" style="text-decoration: none; color: #24242c; font-weight: bold;">Quem Somos</a>
-        <a href="/contato" style="text-decoration: none; color: #24242c; font-weight: bold;">Contato</a>
+        <!--a href="/quem-somos" style="text-decoration: none; color: #24242c; font-weight: bold;">Quem Somos</a-->
+        <a href="https://wa.me/5592993914237?text=TE%20Geradores%20Manaus,%20Bom%20dia.%20Gostaria%20de%20iniciar%20um%20atendimento" style="text-decoration: none; color: #24242c; font-weight: bold;">Contato</a>
     </div>
 
     <!-- Script de Toggle -->
@@ -200,6 +212,58 @@
                 </p>
             </div>
 
+        </div>
+    </section>
+
+    {{--<section style="background-color: #e60084; color: white; padding: 4rem 2rem;">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Sobre a Geradores Manaus</h1>
+            <p class="text-lg max-w-2xl mx-auto"> Especialistas em soluções energéticas: Venda, locação e consultoria de
+                geradores a diesel de 15 a 500kVA.
+            </p>
+        </div>
+    </section>--}}
+    
+    <!-- Seção de texto com imagem -->
+    <section class="py-16 bg-[#e60084]">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4 text-white">Energia confiável para seus projetos</h2>
+                <p class="text-white leading-relaxed"> A Geradores Manaus nasceu com o propósito de oferecer soluções
+                    energéticas robustas e acessíveis para todo o Amazonas. Nossa equipe é formada por técnicos
+                    especializados, preparados para atender desde pequenas empresas até grandes operações industriais e
+                    eventos. </p>
+                    <br><br>
+                <p class="text-white"> Trabalhamos com equipamentos modernos, manutenção preventiva e suporte
+                    dedicado 24h. Estamos prontos para garantir que seu projeto nunca fique no escuro. </p>
+            </div>
+            <div> <img src="{{ asset('images/foto4.jpeg') }}" alt="Equipe Técnica" class="rounded shadow max-w-md w-full mx-auto"> </div>
+            
+        </div>
+    </section> <!-- Valores e diferenciais -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-[#e60084]">Nossos Diferenciais</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded shadow"> <img src="{{ asset('images/experiencia.svg') }}"
+                        class="h-12 mx-auto mb-4" alt="Experiência">
+                    <h3 class="font-semibold text-xl mb-2">Experiência Local</h3>
+                    <p>Mais de 5 anos atuando no fornecimento de energia no Amazonas, com amplo conhecimento técnico e
+                        logístico.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow"> <img src="{{ asset('images/suporte.svg') }}"
+                        class="h-12 mx-auto mb-4" alt="Suporte 24h">
+                    <h3 class="font-semibold text-xl mb-2">Atendimento 24h</h3>
+                    <p>Suporte técnico em tempo real para emergências, com atendimento ágil e presencial sempre que
+                        necessário.</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow"> <img src="{{ asset('images/compromisso.svg') }}"
+                        class="h-12 mx-auto mb-4" alt="Compromisso">
+                    <h3 class="font-semibold text-xl mb-2">Compromisso com o Cliente</h3>
+                    <p>Transparência, agilidade e soluções sob medida para garantir a melhor experiência em fornecimento
+                        de energia.</p>
+                </div>
+            </div>
         </div>
     </section>
 
