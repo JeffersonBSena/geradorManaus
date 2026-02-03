@@ -1,0 +1,45 @@
+/* Custom Admin Styles */
+@import url('https://fonts.bunny.net/css?family=instrument-sans:400,500,600');
+
+:root {
+    --font-family: 'Instrument Sans', sans-serif;
+}
+
+/* Force Font Family */
+body,
+.fi-body {
+    font-family: var(--font-family) !important;
+}
+
+/* Responsive Logo Fix */
+img[src*="LOGO.svg"] {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 640px) {
+    img[src*="LOGO.svg"] {
+        max-height: 2.5rem !important;
+    }
+}
+
+/* Fix login page spacing */
+.fi-simple-main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Reduce layout spacing */
+.fi-layout>.fi-main {
+    padding-top: 10px !important;
+    /* Remove top padding from main content area */
+}
+
+/* Optional: Ensure topbar doesn't have excessive bottom margin */
+.fi-topbar {
+    margin-bottom: 0 !important;
+}

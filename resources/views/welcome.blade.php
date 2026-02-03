@@ -27,7 +27,7 @@
     <!-- End Google Tag Manager -->
 </head>
 
-<body class="bg-black-100 text-black-800 ">
+<body class="bg-gray-100 text-gray-800 ">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNDK9HNN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -50,6 +50,9 @@
             </a>
             <a href="https://www.facebook.com/profile.php?id=61569206324847" target="_blank" aria-label="Facebook">
                 <i class="fab fa-facebook text-white text-base"></i>
+            </a>
+            <a href="{{ route('filament.admin.auth.login') }}" class="hover:text-gray-400 transition ml-2" title="Financeiro">
+                <i class="fas fa-lock text-xs opacity-50 text-white"></i>
             </a>
         </div>
     </div>
