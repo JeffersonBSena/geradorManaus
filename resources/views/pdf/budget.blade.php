@@ -28,6 +28,7 @@
         .company-details h3 {
             margin: 0;
             color: #e60084;
+            font-size: inherit;
         }
         .company-details p {
             margin: 2px 0;
@@ -75,6 +76,7 @@
             text-align: left;
             font-weight: bold;
             color: #333;
+            font-size: inherit;
         }
         .items-table td {
             padding: 10px;
@@ -125,6 +127,7 @@
             padding-bottom: 5px;
             margin-bottom: 10px;
             color: #333;
+            font-size: inherit;
         }
     </style>
 </head>
@@ -231,6 +234,26 @@
         </div>
     </div>
     @endif
+
+    <div style="margin-top: 20px; padding: 15px; background-color: #f9f9f9; border-left: 4px solid #e60084; font-size: 11px;">
+        <h4 style="margin: 0 0 10px 0; color: #333; font-size: 12px;">Dados Bancários para Pagamento</h4>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="width: 50%; vertical-align: top; padding-right: 15px;">
+                    <div style="margin-bottom: 5px;"><strong style="color: #e60084;">Transferência / TED / DOC</strong></div>
+                    <strong>Banco:</strong> BANCO BTG PACTUAL S.A<br>
+                    <strong>Agência:</strong> 0050<br>
+                    <strong>Conta:</strong> 1920937-8<br>
+                    <strong>Titular:</strong> TE GERADORES MANAUS
+                </td>
+                <td style="width: 50%; vertical-align: top; border-left: 1px solid #ddd; padding-left: 15px;">
+                    <div style="margin-bottom: 5px;"><strong style="color: #e60084;">PIX</strong></div>
+                    <strong>Chave (CNPJ):</strong> 63.988.632/0001-25<br>
+                    <span style="color: #666; font-size: 10px;">Banco: BANCO BTG PACTUAL S.A</span>
+                </td>
+            </tr>
+        </table>
+    </div>
 
     <div class="terms">
         <h4>Condições Gerais</h4>
