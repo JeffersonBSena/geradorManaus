@@ -160,6 +160,52 @@ class BudgetResource extends Resource
                     ->icon('heroicon-o-document-arrow-down')
                     ->url(fn (Budget $record) => route('budgets.pdf', $record))
                     ->openUrlInNewTab(),
+                Tables\Actions\Action::make('sendEmail')
+                    ->label('Enviar por Email')
+                    ->icon('heroicon-o-paper-airplane')
+                    ->requiresConfirmation()
+                    ->modalHeading('Enviar Orçamento por Email')
+                    ->modalDescription('Tem certeza que deseja enviar este orçamento para o email do cliente?')
+                    ->modalSubmitActionLabel('Sim, enviar')
+                    ->action(function (Budget $record) {
+                        if (!$record->customer->email) {
+                            \Filament\Notifications\Notification::make()
+                                ->title('Erro')
+                                ->body('O cliente não possui email cadastrado.')
+                                ->danger()
+                                ->send();
+                            return;
+                        }
+
+                        try {
+                            // Generate PDF Content
+                            $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('pdf.budget', ['budget' => $record]);
+                            $pdfContent = $pdf->output();
+
+                            // Send Email Manually
+                            \Illuminate\Support\Facades\Mail::send('emails.budget', ['budget' => $record], function($message) use ($record, $pdfContent) {
+                                $message->to($record->customer->email)
+                                        ->subject("Orçamento #{$record->id} - TE Geradores Manaus")
+                                        ->attachData($pdfContent, "Orcamento-{$record->id}.pdf", [
+                                            'mime' => 'application/pdf',
+                                        ]);
+                            });
+                            
+                            $record->update(['status' => 'sent']);
+
+                            \Filament\Notifications\Notification::make()
+                                ->title('Sucesso')
+                                ->body('Orçamento enviado com sucesso!')
+                                ->success()
+                                ->send();
+                        } catch (\Exception $e) {
+                            \Filament\Notifications\Notification::make()
+                                ->title('Erro ao enviar')
+                                ->body('Ocorreu um erro ao tentar enviar o email: ' . $e->getMessage())
+                                ->danger()
+                                ->send();
+                        }
+                    }),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

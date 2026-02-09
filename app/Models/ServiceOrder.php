@@ -26,6 +26,11 @@ class ServiceOrder extends Model
         return $this->belongsTo(SLA::class);
     }
 
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
     protected static function booted()
     {
         static::creating(function ($serviceOrder) {

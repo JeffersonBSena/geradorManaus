@@ -36,6 +36,11 @@ class ServiceOrderResource extends Resource
                 Forms\Components\Select::make('sla_id')
                     ->relationship('sla', 'name')
                     ->label('SLA / Prioridade de Tempo'),
+                Forms\Components\Select::make('user_id')
+                    ->relationship('user', 'name', fn (Builder $query) => $query->where('role', 'technician'))
+                    ->searchable()
+                    ->preload()
+                    ->label('Técnico Responsável'),
                 Forms\Components\Select::make('priority')
                     ->options([
                         'low' => 'Baixa',
@@ -77,6 +82,7 @@ class ServiceOrderResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('id')->sortable()->label('OS #'),
                 Tables\Columns\TextColumn::make('customer.name')->label('Cliente')->searchable(),
+                Tables\Columns\TextColumn::make('user.name')->label('Técnico')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('status')
                     ->badge()
                     ->color(fn (string $state): string => match ($state) {
@@ -134,5 +140,16 @@ class ServiceOrderResource extends Resource
             'create' => Pages\CreateServiceOrder::route('/create'),
             'edit' => Pages\EditServiceOrder::route('/{record}/edit'),
         ];
+    }
+
+    public static function getEloquentQuery(): Builder
+    {
+        $query = parent::getEloquentQuery();
+
+        if (auth()->check() && auth()->user()->isTechnician()) {
+            $query->where('user_id', auth()->id());
+        }
+
+        return $query;
     }
 }

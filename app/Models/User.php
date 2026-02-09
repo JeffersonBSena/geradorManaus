@@ -25,7 +25,11 @@ class User extends Authenticatable implements FilamentUser
         'name',
         'email',
         'password',
+        'role',
     ];
+
+    const ROLE_ADMIN = 'admin';
+    const ROLE_TECHNICIAN = 'technician';
 
     /**
      * The attributes that should be hidden for serialization.
@@ -65,6 +69,16 @@ class User extends Authenticatable implements FilamentUser
     public function documents()
     {
         return $this->hasMany(Document::class);
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->role === self::ROLE_ADMIN;
+    }
+
+    public function isTechnician(): bool
+    {
+        return $this->role === self::ROLE_TECHNICIAN;
     }
 
     public function canAccessPanel(Panel $panel): bool

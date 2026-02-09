@@ -22,6 +22,10 @@ Route::get('/admin/budgets/{budget}/pdf', [\App\Http\Controllers\BudgetPdfContro
     ->middleware(['auth']) // Ensure user is authenticated
     ->name('budgets.pdf');
 
+Route::get('/admin/maintenance-reports/{record}/pdf', [\App\Http\Controllers\MaintenanceReportController::class, 'download'])
+    ->middleware(['auth'])
+    ->name('maintenance-report.pdf');
+
 Route::get('/verificar-orcamento', [\App\Http\Controllers\BudgetPdfController::class, 'verify'])->name('budget.verify');
 Route::get('/verificar-orcamento/{token}', [\App\Http\Controllers\BudgetPdfController::class, 'verify'])->name('budget.verify.token');
 
